@@ -38,7 +38,7 @@ jobs:
 
     - name: Run streamlit hello
       run: |
-        streamlit hello
+        python -c "import subprocess; import time; process = subprocess.Popen(['streamlit', 'hello']); time.sleep(10); process.kill()"
 
     
  
